@@ -139,26 +139,6 @@ int main()
                         IndexFile.close();
                         fwrite(Page2Buffer.c_str(), strlen(Page2Buffer.c_str()), 1, ClientFP);
                     }
-                   /*
-                    fprintf( ClientFP,
-                    "<form action='test.htm' name='file' method='post'>\n"
-                    "<input type='submit' value='Остановить сервер' title='' style='width:30%;'>\n"
-                    "</form>\n");
-                    fprintf( ClientFP,
-                    "<form action='script' name='scr' method='post'>\n"
-                    "<input type='submit' value='Воспроизвести трэк' title='' style='width:30%;'>\n"
-                    "</form>\n");
-                    fprintf( ClientFP, ХУЙ
-                    "<form action='http://www.google.ru/search' method='get'  target='_blank'>\n"
-                    "<input type='hidden' value='протокол http' name='q'>"
-                    "<input type='submit' value='Отправить Google запрос на поиск' title='' style='width:30%;'>\n"
-                    "</form>\n");
-                    fprintf( ClientFP,
-                    "</div>\n"
-                    "</body>\n"
-                    "</html>\n");
-                    */
-
                     cerr << "Клиент запросил index.html"<< endl;
                 }
             fclose(ClientFP);
